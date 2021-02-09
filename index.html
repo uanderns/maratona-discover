@@ -104,7 +104,8 @@
         </section>
     </main>
 
-    <div class="modal-overlay active">
+    <div class="modal-overlay active"> 
+        <!-- <div class="modal-overlay active"> Joga o modal para frente da tela -->
         <div class="modal">
              <div id="form">
                  <h2>Nova Transação</h2>
@@ -115,8 +116,22 @@
                      </div>
 
                      <div class="input-group">
-                        <label class="sr-only" for="amount">Descrição</label>
-                        <input type="number" id="amount" name="amount" placeholder="Descrição">
+                        <label class="sr-only" for="amount">Valor</label>
+                        <input type="number" step="0.01" id="amount" name="amount" placeholder="0,00">
+
+                        <small class="help">Use o sinal - (negativo) para despesas e , (vírgula) para casas decimais
+
+                        </small>
+                    </div>
+
+                    <div class="input-group">
+                        <label class="sr-only" for="date">Data</label>
+                        <input type="date" id="date" name="date" placeholder="01/01/2021">
+                    </div>
+
+                    <div class="input-group actions">
+                        <a href="#" class="button cancel">Cancelar</a>
+                        <button>Salvar</button>
                     </div>
 
                  </form>
